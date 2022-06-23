@@ -22,30 +22,41 @@
     var CONFIG = {"hostname":"yzlives.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="踏出这一步你就成功一半了，剩下的留给命运吧">
-<meta property="og:type" content="website">
-<meta property="og:title" content="FearLess">
-<meta property="og:url" content="https://yzlives.github.io/index.html">
+  <meta name="description" content="React 概述（适合新手）学习目标 能够说出react是什么 能够说出react的特点 能够掌握react的基本用法 能够使用react脚手架  React 介绍  react是一个用于构建用户界面的 JavaScript 库 react官网(https:&#x2F;&#x2F;reactjs.org&#x2F;) react中文网(https:&#x2F;&#x2F;zh-hans.reactjs.org&#x2F;)   React 是一个用于构建用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React 入门基础">
+<meta property="og:url" content="https://yzlives.github.io/2022/06/23/React-%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="FearLess">
-<meta property="og:description" content="踏出这一步你就成功一半了，剩下的留给命运吧">
+<meta property="og:description" content="React 概述（适合新手）学习目标 能够说出react是什么 能够说出react的特点 能够掌握react的基本用法 能够使用react脚手架  React 介绍  react是一个用于构建用户界面的 JavaScript 库 react官网(https:&#x2F;&#x2F;reactjs.org&#x2F;) react中文网(https:&#x2F;&#x2F;zh-hans.reactjs.org&#x2F;)   React 是一个用于构建用">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yzlives.github.io/images/react_logo.jpeg">
+<meta property="og:image" content="https://yzlives.github.io/images/%E7%BB%84%E4%BB%B6-1629115179921.png">
+<meta property="og:image" content="https://yzlives.github.io/images/react-use-1629115179922.png">
+<meta property="og:image" content="https://yzlives.github.io/images/jsx%E7%9A%84%E4%BC%98%E7%82%B9.png">
+<meta property="og:image" content="https://yzlives.github.io/images/image-20200907165515629-1629115818044.png">
+<meta property="og:image" content="https://yzlives.github.io/images/image-20210816202854520.png">
+<meta property="og:image" content="https://yzlives.github.io/images/image-20210816203947396.png">
+<meta property="article:published_time" content="2022-06-23T12:54:04.000Z">
+<meta property="article:modified_time" content="2022-06-23T13:02:34.485Z">
 <meta property="article:author" content="永昭">
+<meta property="article:tag" content="web">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yzlives.github.io/images/react_logo.jpeg">
 
-<link rel="canonical" href="https://yzlives.github.io/">
+<link rel="canonical" href="https://yzlives.github.io/2022/06/23/React-%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>FearLess</title>
+  <title>React 入门基础 | FearLess</title>
   
 
 
@@ -158,9 +169,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -176,10 +188,9 @@
       <meta itemprop="name" content="FearLess">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/06/23/React-%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">React 入门基础</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          React 入门基础
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -193,6 +204,13 @@
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -203,7 +221,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="React-概述（适合新手）"><a href="#React-概述（适合新手）" class="headerlink" title="React 概述（适合新手）"></a>React 概述（适合新手）</h1><h2 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h2><ul>
+        <h1 id="React-概述（适合新手）"><a href="#React-概述（适合新手）" class="headerlink" title="React 概述（适合新手）"></a>React 概述（适合新手）</h1><h2 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h2><ul>
 <li>能够说出react是什么</li>
 <li>能够说出react的特点</li>
 <li>能够掌握react的基本用法</li>
@@ -487,23 +505,46 @@
 </li>
 </ul>
 
-      
     </div>
 
     
     
     
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>永昭
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://yzlives.github.io/2022/06/23/React-%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80/" title="React 入门基础">https://yzlives.github.io/2022/06/23/React-入门基础/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          
+          <div class="post-tags">
+              <a href="/tags/web/" rel="tag"><i class="fa fa-tag"></i> web</a>
+          </div>
+
+        
+
+
+        
       </footer>
+    
   </article>
   
   
   
  
-
-  
-
 
 
           </div>
@@ -554,6 +595,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React-%E6%A6%82%E8%BF%B0%EF%BC%88%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">React 概述（适合新手）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.</span> <span class="nav-text">学习目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.2.</span> <span class="nav-text">React 介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#react%E7%89%B9%E7%82%B9"><span class="nav-number">1.3.</span> <span class="nav-text">react特点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E%E5%BC%8FUI"><span class="nav-number">1.3.1.</span> <span class="nav-text">声明式UI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%84%E4%BB%B6%E5%8C%96"><span class="nav-number">1.3.2.</span> <span class="nav-text">组件化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0%E4%B8%80%E6%AC%A1%EF%BC%8C%E9%9A%8F%E5%A4%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.3.3.</span> <span class="nav-text">学习一次，随处使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-%E8%84%9A%E6%89%8B%E6%9E%B6%EF%BC%88CLI%EF%BC%89"><span class="nav-number">1.4.</span> <span class="nav-text">React 脚手架（CLI）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E%E5%92%8C%E8%B0%83%E6%95%B4"><span class="nav-number">1.4.1.</span> <span class="nav-text">项目目录结构说明和调整</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-number">1.5.</span> <span class="nav-text">React 的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.5.1.</span> <span class="nav-text">基本步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%83%E4%B9%A0"><span class="nav-number">1.5.2.</span> <span class="nav-text">练习</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">1.6.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JSX"><span class="nav-number">2.</span> <span class="nav-text">JSX</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0%E7%9B%AE%E6%A0%87-1"><span class="nav-number">2.1.</span> <span class="nav-text">学习目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSX%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-number">2.2.</span> <span class="nav-text">JSX的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#createElement%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">2.2.1.</span> <span class="nav-text">createElement的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JSX%E7%AE%80%E4%BB%8B"><span class="nav-number">2.2.2.</span> <span class="nav-text">JSX简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4"><span class="nav-number">2.2.3.</span> <span class="nav-text">使用步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JSX%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="nav-number">2.2.4.</span> <span class="nav-text">JSX注意点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8prettier%E6%8F%92%E4%BB%B6%E6%A0%BC%E5%BC%8F%E5%8C%96react%E4%BB%A3%E7%A0%81"><span class="nav-number">2.3.</span> <span class="nav-text">使用prettier插件格式化react代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSX%E4%B8%AD%E5%B5%8C%E5%85%A5JavaScript%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">2.4.</span> <span class="nav-text">JSX中嵌入JavaScript表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93"><span class="nav-number">2.5.</span> <span class="nav-text">条件渲染</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vscode%E9%85%8D%E7%BD%AE%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8"><span class="nav-number">2.6.</span> <span class="nav-text">vscode配置自动补全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93"><span class="nav-number">2.7.</span> <span class="nav-text">列表渲染</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B7%E5%BC%8F%E5%A4%84%E7%90%86"><span class="nav-number">2.8.</span> <span class="nav-text">样式处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%8C%E5%86%85%E6%A0%B7%E5%BC%8F-style"><span class="nav-number">2.8.1.</span> <span class="nav-text">行内样式-style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E5%90%8D-className"><span class="nav-number">2.8.2.</span> <span class="nav-text">类名-className</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%83%E4%B9%A0-1"><span class="nav-number">2.9.</span> <span class="nav-text">练习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">2.10.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
